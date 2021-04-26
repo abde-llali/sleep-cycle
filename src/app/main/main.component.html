@@ -1,0 +1,31 @@
+
+<div class="container" >
+    <div class="chart-container">
+    <span class="title">Sleep Duration</span>
+    <div>
+  <div style="display: block">
+    <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [colors]="barChartColors"
+            [legend]="barChartLegend"
+            [chartType]="barChartType">
+    </canvas>
+  </div>
+</div>
+
+    </div>
+    <div class="cards-container">
+        <div class="card">
+        <span><mat-icon>access_time</mat-icon></span>
+        <span class="card-label">Last night sleep duration</span>
+        <span class="sub-titleL">{{lastSleep}} hours</span>
+        </div>
+        <div class="card">
+        <span><mat-icon>hotel</mat-icon></span>
+        <span class="card-label">Average sleep duration</span>
+        <span class="sub-title">{{averageSleep}} hours</span>
+        </div>
+    </div>
+</div>
