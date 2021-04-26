@@ -3,10 +3,7 @@
         "target": "http://prod.kaisens.fr:811",
         "secure": false,
         "logLevel": "debug",
-        "changeOrigin": true,
-        "pathRewrite": {
-          "^/api": ""
-        }
+        "changeOrigin": true
     }
     
 }
