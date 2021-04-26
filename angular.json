@@ -67,8 +67,7 @@
           "options": {
             "browserTarget": "sleep-cycle:build",
             "proxyConfig": "proxy.conf.json"
-
-        },
+          },
           "configurations": {
             "production": {
               "browserTarget": "sleep-cycle:build:production"
@@ -123,6 +122,10 @@
               "devServerTarget": "sleep-cycle:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
